@@ -139,7 +139,7 @@ function HelpAndSupportList() {
 				          <div className='w-full h-[392px] bg-white text-sm'>
 				            <div className='w-full h-full overflow-y-auto'>
 				              {groupedByDepartment[department].map((contactItem, idx) => (
-				                <div key={contactItem.id} className='w-full h-14 border-b-[#C2C6D4] border-[1px] bg-white flex'>
+				                <div key={contactItem.id} className='w-full h-14 border-b-[#C2C6D4] border-[1px] bg-white flex text-black'>
 				                  <div className="w-[10%] h-full px-2 flex items-center">{idx + 1}</div>
 				                  <div className="w-[40%] h-full px-2 flex items-center">{contactItem.name}</div>
 				                  <div className="w-[50%] h-full px-2 flex items-center">{contactItem.contact}</div>
