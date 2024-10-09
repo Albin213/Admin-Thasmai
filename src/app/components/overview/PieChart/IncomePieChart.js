@@ -121,7 +121,7 @@ export default function IncomePieChart() {
  
       <CardBody className="h-[85%] m-0 p-0 px-2  flex flex-col md:flex-row justify-around items-center">
         {
-          dataValues[0] ? (
+          pieChartData[0] ? (
             <Chart {...chartConfig} />
  
           ) : (

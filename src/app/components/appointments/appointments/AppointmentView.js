@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 // import { useAppointStore } from '@/app/appointments/appointments/ashramAppointmentState';.
 import { useAppointFilterStore } from "@/app/appointments/appointments/filterstate";
+import DateFormatter from '../../utils/DateFormatter';
 
 
 
@@ -84,9 +85,9 @@ function AppointmentView() {
                         <div className='md:h-[75%] md:w-[90%] px-2 md:px-0 py-5 md:py-0 flex flex-col md:flex-row m-auto'>
                             <div className='w-full md:w-[50%] mt-4 text-black'>
                                 <div className='flex pt-4'><p className='w-[50%]'>Appointment Id </p><p>: {data.appointment.id}</p></div>
-                                <div className='flex pt-4'><p className='w-[50%]'>Appointment Date </p><p>: {data.appointment.appointmentDate}</p></div>
+                                <div className='flex pt-4'><p className='w-[50%]'>Appointment Date </p><p>: <DateFormatter date={data.appointment.appointmentDate}/> </p></div>
                                 <div className='flex pt-4'><p className='w-[50%]'>Username </p><p>: {data.appointment.user_name}</p></div>
-                                <div className='flex pt-4'><p className='w-[50%]'>Registered Date </p><p>: {data.appointment.register_date}</p></div>
+                                <div className='flex pt-4'><p className='w-[50%]'>Registered Date </p><p>: <DateFormatter date={data.appointment.register_date}/> </p></div>
                                 <div className='flex pt-4'><p className='w-[50%]'>Status </p><p>: {data.appointment.appointment_status}</p></div>
                                 <div className='flex pt-4'><p className='w-[50%]'>Payment </p><p>: {data.appointment.payment}</p></div>
                                 <div className='flex pt-4'><p className='w-[50%]'>Pay Method </p><p>: {data.appointment.payment_method}</p></div>
@@ -102,8 +103,8 @@ function AppointmentView() {
                             <div className='w-full md:w-[50%] mt-4 text-black'>
                                 <div className='flex pt-4'><p className='w-[50%]'>Emergency contact</p><p>: {data.appointment.emergencyNumber}</p></div>
                                 <div className='flex pt-4'><p className='w-[50%]'>Rewards</p><p>: {data.appointment.discount}</p></div>
-                                <div className='flex pt-4'><p className='w-[50%]'>Check-in date</p><p>: {data.appointment.appointmentDate}</p></div>
-                                <div className='flex pt-4'><p className='w-[50%]'>Check-out date</p><p>: {data.appointment.check_out}</p></div>
+                                <div className='flex pt-4'><p className='w-[50%]'>Check-in date</p><p>: <DateFormatter date={data.appointment.appointmentDate}/></p></div>
+                                <div className='flex pt-4'><p className='w-[50%]'>Check-out date</p><p>: <DateFormatter date={data.appointment.check_out}/></p></div>
                                 <div className='flex pt-4'><p className='w-[50%]'>Destination</p><p>: Ashram</p></div>
                                 <div className='flex pt-4'><p className='w-[50%]'>Pick up</p><p>: {data.appointment.from}</p></div>
                                 <div className='flex pt-4'><p className='w-[50%]'>Reason</p><p>: {data.appointment.appointment_reason}</p></div>

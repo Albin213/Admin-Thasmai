@@ -484,7 +484,7 @@ export default Page;
 //         </button>
 
 //         <div className="w-full bg-[#E1E2EB] rounded-md mt-4">
-//           {/* Form fields and other content */}
+          
 //         </div>
 
 //         <ZoomMeet

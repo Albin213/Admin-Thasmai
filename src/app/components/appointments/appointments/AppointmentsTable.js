@@ -134,7 +134,7 @@ function AppointmentsTable(props) {
           style={{ borderRadius: "11px" }}
         >
           <tr className="rounded-3xl">
-            <th className="text-center ">Id</th>
+            <th className="text-center ">Appointment Id</th>
             <th className="text-center">Date</th>
             <th className="text-center">Username</th>
             <th className="text-center">Check In</th>
@@ -156,8 +156,8 @@ function AppointmentsTable(props) {
                     className="font-medium text-[0.8rem] text-black my-10 border-b-[1px] border-[#eeeeee]"
                   > 
                     
-                    <td className="text-center">{appoint.UId} </td>
-                    <td className="text-center">{appoint.register_date ? appoint.register_date : "-"} </td>
+                    <td className="text-center">{appoint.id} </td>
+                    <td className="text-center">{appoint.register_date ? <DateFormatter date={appoint.register_date}/> : "-"} </td>
                     <td className="text-center text-indigo-600 cursor-pointer hover:scale-110"
                       onClick={()=>{
                         filterState.setprofileViewToggle(true,appoint.UId);

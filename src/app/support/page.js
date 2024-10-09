@@ -77,7 +77,7 @@ function HelpAndSupportList() {
 	const [contactList, setContactList] = useState([]);
 
 	const setNavbarText = useNavbarTextStore((state) => state.setNavbarText);
-	setNavbarText("Support & Contact");
+	setNavbarText("Help & Support");
 
 
 	// Group contacts by department using reduce
@@ -112,7 +112,7 @@ function HelpAndSupportList() {
 
 
 	<div className='w-full h-full overflow-y-auto'>
-		<h1>Help & Support</h1>
+		{/* <h1>Help & Support</h1> */}
 
 		<div className='w-full grid grid-cols-3 gap-4 gap-y-8 overflow-y-auto '>
 			{/* <div className='w-[373px] h-[448px]'>

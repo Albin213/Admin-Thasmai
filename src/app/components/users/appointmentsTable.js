@@ -68,7 +68,7 @@ useEffect(()=>{
           style={{ borderRadius: "11px" }}
         >
           <tr className="rounded-3xl">
-            <th className="text-center">Id</th>
+            <th className="text-center">Appointment Id</th>
 
             <th className="text-center">Date</th>
             <th className="text-center">Username</th>
@@ -95,7 +95,7 @@ useEffect(()=>{
                     className="font-medium text-[0.8rem] text-black my-10 border-b-[1px] border-[#eeeeee]"
                   > 
      
-                    <td className="text-center">{appoint.UId} </td>
+                    <td className="text-center">{appoint.id} </td>
                     <td className="text-center">{appoint.register_date ? <DateFormatter date={appoint.register_date}/> : "-"} </td>
                     <td 
                       className="text-center text-indigo-600 hover:text-indigo-800 hover:scale-105 cursor-pointer"

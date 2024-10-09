@@ -255,7 +255,7 @@ function FinancialConfigTable() {
                                 {editableId === data.id ? (
                                     <input
                                         className="w-full h-[35px] px-2 border-none bg-[#D9D9D9] rounded"
-                                        type="text"
+                                        type="number"
                                         value={inputFieldValue.value}
                                         onChange={(e) => handleOnChange("value", e.target.value)}
                                     />

@@ -206,7 +206,7 @@ function SideBar() {
                     <li className={`${pathname.startsWith('/videos') ? ' bg-[#005DB8] text-white py-2 px-5' : 'py-2 px-5 text-black hover:bg-[#dbeafe]'}`}>Videos</li>
                   </Link>
                   <Link href="/expenses/add-expense">
-                    <li className={`${pathname.startsWith('/expenses') ? ' bg-[#005DB8] text-white py-2 px-5' : 'py-2 px-5 text-black hover:bg-[#dbeafe]'}`}>Financial / Expense</li>
+                    <li className={`${pathname.startsWith('/expenses') ? ' bg-[#005DB8] text-white py-2 px-5' : 'py-2 px-5 text-black hover:bg-[#dbeafe]'}`}>Expenses</li>
                   </Link>
                   <Link href="/operator/operator-creation">
                     <li className={`${pathname.startsWith('/operator') ? ' bg-[#005DB8] text-white py-2 px-5' : 'py-2 px-5 text-black hover:bg-[#dbeafe]'}`}>User Management</li>
@@ -215,11 +215,11 @@ function SideBar() {
                     <li className={`${pathname.startsWith('/configuration') ? ' bg-[#005DB8] text-white py-2 px-5' : 'py-2 px-5 text-black hover:bg-[#dbeafe]'}`}>Configuration Parameters</li>
                   </Link>
                   <Link href="/support">
-                    <li className={`${pathname.startsWith('/support') ? ' bg-[#005DB8] text-white py-2 px-5' : 'py-2 px-5 text-black hover:bg-[#dbeafe]'}`}>Support & Contact</li>
+                    <li className={`${pathname.startsWith('/support') ? ' bg-[#005DB8] text-white py-2 px-5' : 'py-2 px-5 text-black hover:bg-[#dbeafe]'}`}>Help & Support</li>
                   </Link>
-                  <Link href="/helpandsupport">
+                  {/* <Link href="/helpandsupport">
                     <li className={`${pathname.startsWith('/helpandsupport') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Help & Support</li>
-                  </Link>
+                  </Link> */}
                 </>
               )}
               {(role === 'operator' || role === "Operator") && (
@@ -240,10 +240,10 @@ function SideBar() {
                     <li className={`${pathname.startsWith('/events') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Events</li>
                   </Link>
                   <Link href="/expenses/add-expense">
-                    <li className={`${pathname.startsWith('/expenses') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Financial / Expense</li>
+                    <li className={`${pathname.startsWith('/expenses') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Expenses</li>
                   </Link>
                   <Link href="/support">
-                    <li className={`${pathname.startsWith('/support') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Support & Contact</li>
+                    <li className={`${pathname.startsWith('/support') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Help & Support</li>
                   </Link>
                 </>
               )}
