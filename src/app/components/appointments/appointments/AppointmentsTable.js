@@ -53,15 +53,15 @@ function AppointmentsTable(props) {
     setIsButtonDisabled(true);
 
     try {
-        const formattedRegDate = moment( regDate, 'DD/MM/YYYY',true).format("YYYY-MM-DD");
-        console.log(formattedRegDate);
+        // const formattedRegDate = moment( regDate, 'DD/MM/YYYY',true).format("YYYY-MM-DD");
+        // console.log(formattedRegDate);
 
 
         const dateTime = `${moment().format('DD/MM/YYYY')}`;
         const formattedCheckinDate = moment( dateTime, 'DD/MM/YYYY',true).format("YYYY-MM-DD");
 
         const response = await axios.put(`${process.env.NEXT_PUBLIC_API_URL}/superadmin/update-payment/${id}`,{
-          register_date: formattedRegDate,
+          register_date: regDate,
           appointment_status : status,
           appointmentDate: formattedCheckinDate
         })
