@@ -37,12 +37,12 @@ function HelpAndSupportTable(props) {
                 <th className="text-center w-[15%]">Action</th>
               </tr>
             </thead>
-            <tbody className="my-10">
+            <tbody className="my-10 text-black">
 
               {
                 props.contactList.map((contact, index) => {
                   return (
-                    <tr key={index} className="border-[1px] border-b-[#C2C6D4]">
+                    <tr key={index} className="border-[1px] border-b-[#C2C6D4] text-black">
                       <td className="text-center w-[10%]">{ index+1 }</td>
                       <td className="text-center w-[20%]">{contact.departments}</td>
                       <td className="text-center w-[20%]">{contact.name}</td>

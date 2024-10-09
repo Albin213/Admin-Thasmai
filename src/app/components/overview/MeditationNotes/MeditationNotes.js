@@ -15,7 +15,7 @@ function MeditationNotes() {
             try {
     
               const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/superadmin/impNotes`);
-            //   console.log(response,"imp message");
+              console.log(response,"imp message");
               setImpNotes(response.data);
     
             } catch (error) {

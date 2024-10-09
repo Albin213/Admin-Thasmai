@@ -86,12 +86,12 @@ function AddNewDepartment(props) {
                   <th className="text-center w-[]">Action</th>
                 </tr>
               </thead>
-              <tbody className="my-10 overflow-y-scroll">
+              <tbody className="my-10 overflow-y-scroll text-black">
 
                 {
                   departmentList.map((dept, index) => {
                     return (
-                      <tr className="border-[1px] border-b-[#C2C6D4]">
+                      <tr className="border-[1px] border-b-[#C2C6D4] text-black">
                         <td className="text-center w-[]">{index + 1}</td>
                         <td className="text-center w-[]">{ dept.departments }</td>
                         <td className="  ">
