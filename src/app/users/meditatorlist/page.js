@@ -452,7 +452,8 @@ function MeditatorList() {
             }
         } catch (error) {
             console.error("Error distributing coupons:", error);
-            toast(error.message);
+            const response = error.response
+            toast.error(response.data.message);
         }
     };
  

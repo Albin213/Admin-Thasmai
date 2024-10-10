@@ -4,7 +4,7 @@ import { create } from "zustand";
 
 export const useApplicationFeedbackStore = create((set) => ({
 
-  FieldValues :["User Id","Name","Rating"],
+  FieldValues :["User Id","Rating"],
   dateOperator: [
     "equal to",
     "between",

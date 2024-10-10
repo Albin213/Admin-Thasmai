@@ -109,7 +109,7 @@ function AppointmentFeedbackList( props) {
                     className="font-medium text-[0.8rem] text-black my-10 border-b-[1px] border-[#eeeeee]"
                   > 
 
-                    <td className="text-center">{ i.UId }</td>
+                    <td className="text-center">{ i.id }</td>
                     <td className="text-center">{ i.user_name } </td>
                     <td className="text-center">{ i.rating } </td>
                     
