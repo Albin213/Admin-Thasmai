@@ -50,7 +50,10 @@ function PaymentTruePopUp(props) {
           console.log(response);
           if(response.data.message) {
             const resp = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/admin/meditation-flag`, {
-                UId: UId
+                UId: UId,
+                amount:2500,
+                payment_date: payment_date,
+                payment_time: payment_time,
             });
             console.log(resp);
             toast.success(resp.data.message);
