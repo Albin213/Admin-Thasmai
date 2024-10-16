@@ -43,7 +43,7 @@ function PaymentTruePopUp(props) {
         try {
           const response = await axios.put(`${process.env.NEXT_PUBLIC_API_URL}/admin/processPayment`, {
             UId: UId,
-            amount:2500,
+            amount:5000,
             payment_date: payment_date,
             payment_time: payment_time,
           });
@@ -51,7 +51,7 @@ function PaymentTruePopUp(props) {
           if(response.data.message) {
             const resp = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/admin/meditation-flag`, {
                 UId: UId,
-                amount:2500,
+                amount:5000,
                 payment_date: payment_date,
                 payment_time: payment_time,
             });
