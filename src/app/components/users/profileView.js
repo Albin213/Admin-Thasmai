@@ -97,7 +97,7 @@ function ProfileView({ selectedId, UId, setIsViewProfile }) {
             <p className='mb-4 font-semibold'>{`${profile.first_name}  ${profile.last_name}`}</p>
             <p className='mb-4 break-words'>{ profile.email }</p>
             <p className='mb-4'>+91 { profile.phone }</p>
-            <p className='mb-4'>Card No: { profile.UId }</p>
+            <p className='mb-4'>Card No: TSL{ profile.UId }</p>
           </div>
         </div>
 
@@ -205,7 +205,7 @@ function ProfileView({ selectedId, UId, setIsViewProfile }) {
                       <tbody className='text-black text-sm md:text-base'>
                         <tr className='h-[40px]'>
                           <td className='w-[35%] text-left'>Card No.</td>
-                          <td className='w-[65%] text-left'>: {profile.UId}</td>
+                          <td className='w-[65%] text-left'>: TSL{profile.UId}</td>
                         </tr>
                         <tr className='h-[40px]'>
                           <td className='w-[35%] text-left'>Address</td>

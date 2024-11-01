@@ -95,7 +95,7 @@ function UserProfile(props) {
                           profile.classAttended === true &&
                           <>
                             <tr className=''>
-                              <td className='w-[35%] text-left'>Class Attented</td>
+                              <td className='w-[35%] text-left'>Induction class attended</td>
                               <td className='w-[65%] text-left flex items-center'>: <IoMdCheckmarkCircleOutline  className='ms-3 text-4xl text-teal-500' />
                               </td>
                             </tr>
@@ -108,8 +108,6 @@ function UserProfile(props) {
                         }
                         
                         
-                        
-
                       </tbody>
                   </table>
 

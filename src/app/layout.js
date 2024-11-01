@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/navbar";
 import SideBar from "./components/siderbar/sidebar";
 import {Toaster} from 'react-hot-toast';
 import "./globals.css";
+import NewSidebar from "./components/NewSidebar";
 
 
 
@@ -47,7 +48,8 @@ export default function RootLayout({ children }) {
         <div className="m-0 p-0 flex w-[100vw] h-[100vh] overflow-hidden">
           <Toaster />
           <div className="m-0 w-0 md:w-[18%] h-full">
-            <SideBar/>  
+            {/* <SideBar/>   */}
+            <NewSidebar/>
           </div>
           <div className="w-full md:w-[82%] h-full">
             <Navbar/>

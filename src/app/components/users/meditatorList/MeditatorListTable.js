@@ -399,7 +399,7 @@ function  MeditatorListTable(props) {
                 <tr>
                     <th className="text-center">DOJ</th>
                     <th className="text-center">Name</th>
-                    <th className="text-center">Id</th>
+                    <th className="text-center">UId</th>
                     <th className="text-center">Coupons</th>
                     <th className="text-center">Phone</th>
                     <th className="text-center">Email</th>
@@ -449,7 +449,7 @@ function  MeditatorListTable(props) {
                                     >
                                         {i.firstName + " " + i.secondName}
                                     </td>
-                                    <td className="text-center">{i.UId} </td>
+                                    <td className="text-center">TSL{i.UId} </td>
                                     <td className="text-center">{i.coupons} </td>
                                     <td className="text-center">{i.phone} </td>
                                     <td className="text-center">{i.email}</td>

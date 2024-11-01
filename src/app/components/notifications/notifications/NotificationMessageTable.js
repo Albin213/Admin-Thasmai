@@ -32,7 +32,7 @@ function NotificationMessageTable() {
 
                             return (
                                 <tr className='h-12 text-sm text-black border-[#E0E2EC] border-b-2' key={index}>
-                                    <td className='ps-2'>{i.UId}</td>
+                                    <td className='ps-2'>TSL{i.UId}</td>
                                     <td className='ps-2'>{ i.first_name } { i.last_name }</td>
                                     {
                                         isAdded[0] ? (

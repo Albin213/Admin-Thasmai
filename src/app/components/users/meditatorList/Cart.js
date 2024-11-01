@@ -495,7 +495,7 @@ function Cart({ setCartToggle, setFetchToggle, fetchToggle, distributedList }) {
                                             className="font-medium text-sm bg-white text-black"
                                         >
                                             <td className="text-center">{ item.firstName }</td>
-                                            <td className="text-center">{ item.firstName }</td>
+                                            <td className="text-center">TSL{ item.UId }</td>
                                             <td className="text-center flex justify-center">
                                                 <p className="w-20 h-6 flex justify-center items-center bg-[#D9D9D9]">
                                                     { item.coupons_to_distribute }

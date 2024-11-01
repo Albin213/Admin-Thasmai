@@ -165,7 +165,7 @@ const handleSubmit = async (e) => {
                              className='w-[45%] h-[40px] px-1 bg-white text-black rounded border-[2px] border-[rgba(0,0,0,0.36)]' 
                              type="date"
                              placeholder="Date"
-                             min= {new Date()} 
+                             min={new Date().toISOString().split("T")[0]} 
                              name="date"
                              value={edittedData.date}
                              id="" 
