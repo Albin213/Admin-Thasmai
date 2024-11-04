@@ -71,7 +71,7 @@ function PaymentTruePopUp(props) {
 
 
   return (
-    <div className="w-[100vw] h-[100vh] bg-[#000000af] absolute left-0 top-0 flex justify-center items-center">
+    <div className="w-[100vw] h-[100vh] bg-[#000000af] absolute left-0 top-0 flex justify-center items-center z-20">
             <div className='w-[500px] h-[250px] bg-white rounded hover:bg-[#cfcdcc]'>
                 <div className='w-full h-[50%] flex justify-center items-center'>
                     <p className='px-5 text-md font-medium text-black'>

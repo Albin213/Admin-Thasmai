@@ -199,10 +199,21 @@ function NewSidebar() {
         role === "admin" && (
           <div className="w-full h-full pt-14 pb-40 bg-[#00244E] overflow-y-auto">
           <Link href="/overview">
-            <h1 className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5  ${ pathname === "/overview" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}>
+            <h1 className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5`}>
               OVERVIEW
             </h1>
           </Link>
+
+          <Link href="/overview">
+              <p 
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/overview" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img src="/admin/mahadhanam-icon.svg" alt="mahadhanam-icon" />
+                </span> */}
+                Overview
+              </p>
+            </Link>
   
           <div className="w-full">
             <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
@@ -384,7 +395,7 @@ function NewSidebar() {
           {/* Feedbacksview */}
           <div className="w-full">
             <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
-              FEEDBACK VIEWS{" "}
+              FEEDBACK VIEWS
             </h1>
             <Link href="/feedback/appointmentFeedback">
               <p
@@ -503,7 +514,7 @@ function NewSidebar() {
                     className=""
                   />
                 </span> */}
-                Event Details
+                Events
               </p>
             </Link>
   
@@ -526,9 +537,23 @@ function NewSidebar() {
           {/* Videos */}
           <div className="w-full">
             <Link href="/videos">
-              <h1 className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5  ${ pathname === "/videos" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}>
+              <h1 className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5 `}>
                 VIDEOS
               </h1>
+            </Link>
+            <Link href="/videos">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/videos" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Videos
+              </p>
             </Link>
           </div>
   
@@ -573,6 +598,20 @@ function NewSidebar() {
               <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
                 OPERATOR MANAGEMENT
               </h1>
+            </Link>
+            <Link href="/operator/operator-creation">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/operator/operator-creation" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Operator Management
+              </p>
             </Link>
           </div>
   
@@ -716,16 +755,31 @@ function NewSidebar() {
                 Help & Support
               </p>
             </Link>
+            
           </div>
   
           {/* Help and Support */}
           <div className="w-full">
             <Link href="/support">
               <h1 
-                className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5 ${ pathname === "/support" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+                className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5 `}
               >
                 HELP AND SUPPORT
               </h1>
+            </Link>
+            <Link href="/support">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/support" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Help & Support
+              </p>
             </Link>
           </div>
           </div>
@@ -736,17 +790,28 @@ function NewSidebar() {
       {
         (role === "operator" || role === "Operator") && (
           <div className="w-full h-full pt-14 pb-40 bg-[#00244E] overflow-y-auto">
-          <Link href="/overview">
-            <h1 className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5  ${ pathname === "/overview" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}>
+         <Link href="/overview">
+            <h1 className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5`}>
               OVERVIEW
             </h1>
           </Link>
+
+          <Link href="/overview">
+              <p 
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/overview" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img src="/admin/mahadhanam-icon.svg" alt="mahadhanam-icon" />
+                </span> */}
+                Overview
+              </p>
+            </Link>
   
   
           {/* MANAGE APPOINTMENTS */}
           <div className="w-full">
             <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
-              MANAGE APPOINTMENTS{" "}
+              MANAGE APPOINTMENTS
             </h1>
             <Link href="/appointments/appointments">
               <p
@@ -925,13 +990,27 @@ function NewSidebar() {
           </div>
   
           {/* Help and Support */}
-          <div className="w-full mb-24">
+          <div className="w-full">
             <Link href="/support">
               <h1 
-                className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5 ${ pathname === "/support" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+                className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5 `}
               >
                 HELP AND SUPPORT
               </h1>
+            </Link>
+            <Link href="/support">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/support" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Help & Support
+              </p>
             </Link>
           </div>
           </div>

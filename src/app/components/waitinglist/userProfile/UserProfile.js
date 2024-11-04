@@ -19,7 +19,7 @@ function UserProfile(props) {
             <div className='w-full md:w-[1200px] md:h-[650px] p-2 md:p-5 bg-white rounded flex flex-col md:flex-row relative'>
 
                 <button 
-                      className='h-8 w-8 bg-blue-200 text-black text-2xl absolute right-[5px] top-[5px] hover:bg-blue-700 hover:text-white' 
+                      className='h-8 w-8 bg-blue-200 text-black text-2xl absolute right-[5px] top-[5px] hover:bg-blue-700 hover:text-white z-10' 
                       onClick=  {() => { props.setIsUserDetails(false) }}
                 >x</button>
 
@@ -35,8 +35,8 @@ function UserProfile(props) {
                     <div className='w-full md:h-[50%] p-3 pt-5 text-black'>
                       <p className='mb-4 font-semibold'>{`${profile.first_name}  ${profile.last_name}`}</p>
                       <p className='mb-4'>{ profile.email} </p>
-                      <p className='mb-4'>+91 { profile.phone} </p>
-                      <p className='mb-4'>Card No: { profile.UId} </p>
+                      <p className='mb-4'> { profile.phone} </p>
+                      <p className='mb-4'>Card No: TSL{ profile.UId} </p>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@ function UserProfile(props) {
                           profile.classAttended === false &&
                           <>
                             <tr className=''>
-                              <td className='w-[35%] text-left'>Class Attented</td>
+                              <td className='w-[35%] text-left'>Induction class attended</td>
                               <td className='w-[65%] text-left flex items-center'>: <IoMdCloseCircleOutline className='ms-3 text-4xl text-red-500' />
                               </td>
                             </tr>

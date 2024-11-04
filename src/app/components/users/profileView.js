@@ -96,7 +96,7 @@ function ProfileView({ selectedId, UId, setIsViewProfile }) {
           <div className='w-full md:h-[50%] p-3 pt-5 text-black'>
             <p className='mb-4 font-semibold'>{`${profile.first_name}  ${profile.last_name}`}</p>
             <p className='mb-4 break-words'>{ profile.email }</p>
-            <p className='mb-4'>+91 { profile.phone }</p>
+            <p className='mb-4'> { profile.phone }</p>
             <p className='mb-4'>Card No: TSL{ profile.UId }</p>
           </div>
         </div>
@@ -390,7 +390,7 @@ function ProfileView({ selectedId, UId, setIsViewProfile }) {
                       <>
                             <div className='w-full flex flex-col md:flex-row gap-2 md:gap-x-6'>
                               <p className='text-left flex items-center text-black'>
-                                Class Attented : 
+                                Induction class attended : 
                                 <IoMdCheckmarkCircleOutline  className='ms-2 text-3xl text-teal-500' />
                               </p>
                               <p className='text-left flex items-center text-black'>
@@ -416,11 +416,11 @@ function ProfileView({ selectedId, UId, setIsViewProfile }) {
                       <>
                         <div className='w-full flex flex-col md:flex-row gap-2 md:gap-x-6'>
                           <p className='text-left flex items-center text-black'>
-                            Class Attented 
+                            Induction class attended :
                             <IoMdCheckmarkCircleOutline  className='ms-2 text-3xl text-teal-500' />
                           </p>
                           <p className='text-left flex items-center text-black'>
-                            Payment
+                            Payment :
                             <IoMdCheckmarkCircleOutline className='ms-2 text-3xl text-teal-500' />
                           </p>
                         </div>
