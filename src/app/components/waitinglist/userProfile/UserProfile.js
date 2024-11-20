@@ -35,7 +35,7 @@ function UserProfile(props) {
                     <div className='w-full md:h-[50%] p-3 pt-5 text-black'>
                       <p className='mb-4 font-semibold'>{`${profile.first_name}  ${profile.last_name}`}</p>
                       <p className='mb-4'>{ profile.email} </p>
-                      <p className='mb-4'> { profile.phone} </p>
+                      <p className='mb-4'> {profile.countryCode}{" "} {profile.phone} </p>
                       <p className='mb-4'>Card No: TSL{ profile.UId} </p>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ function UserProfile(props) {
                         </tr>
                         <tr className='h-[40px]'>
                           <td className='w-[35%] text-left'>Phone No.</td>
-                          <td className='w-[65%] text-left'>: {profile.phone}</td>
+                          <td className='w-[65%] text-left'>:{profile.countryCode}{" "} {profile.phone}</td>
                         </tr>
                         <tr className='h-[40px]'>
                           <td className='w-[35%] text-left'>Email</td>

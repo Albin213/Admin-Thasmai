@@ -21,7 +21,7 @@ function DateFormatter({ date }) {
   
   // Check if the date is in the correct format
   if (dateArray.length !== 3) {
-    return <span className='text-gray-400'> {" Invalid Date"} </span>;
+    return <span className='text-black'> {"  -  "} </span>;
   }
 
   // Rearrange the date format to DD-MM-YYYY

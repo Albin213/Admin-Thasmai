@@ -50,15 +50,15 @@ function  MahadhanamTable(props) {
         <table className="table">
             <thead className="bg-[#5799FD] text-white sticky top-0 text-[0.9rem] z-50">
                 <tr>
-                    <th className="text-center">DOJ</th>
-                    <th className="text-center">Name</th>
-                    <th className="text-center">Id</th>
-                    <th className="text-center">Coupons</th>
-                    <th className="text-center">Phone</th>
-                    <th className="text-center">Email</th>
-                    <th className="text-center">Status</th>
-                    <th className="text-center">Ban</th>
-                    <th className="text-center">
+                    <th className="text-left">DOJ</th>
+                    <th className="text-left">Name</th>
+                    <th className="text-left">Id</th>
+                    <th className="text-left">Coupons</th>
+                    <th className="text-left">Phone</th>
+                    <th className="text-left">Email</th>
+                    <th className="text-left">Status</th>
+                    <th className="text-left">Ban</th>
+                    <th className="text-left">
                         <label>
                             <input
                                 className="w-4 h-4 checkbox checkbox-md checkbox-accent bg-white text-2xl focus:outline-none text-[#34d399] border-none shadow-none px-[0.7rem] py-[0.7rem] focus:ring-0 "
@@ -92,9 +92,9 @@ function  MahadhanamTable(props) {
                                     className="font-medium text-xs text-black border-b-[1px] border-[#eeeeee]"
                                 >
 
-                                    <td className="text-center">{i.DOJ ? <DateFormatter date={i.DOJ}/> : "-"}</td>
+                                    <td className="text-left">{i.DOJ ? <DateFormatter date={i.DOJ}/> : "-"}</td>
                                     <td
-                                        className="text-center text-indigo-600 hover:text-indigo-800 hover:scale-105 cursor-pointer"
+                                        className="text-left text-indigo-600 hover:text-indigo-800 hover:scale-105 cursor-pointer"
                                         onClick={() => {
                                             // props.setUserId(i.UId);
                                             // props.setIsViewProfile(true);
@@ -103,17 +103,17 @@ function  MahadhanamTable(props) {
                                     >
                                         {i.firstName + " " + i.secondName}
                                     </td>
-                                    <td className="text-center">TSL{i.UId} </td>
-                                    <td className="text-center">{i.coupons} </td>
-                                    <td className="text-center">{i.phone} </td>
-                                    <td className="text-center">{i.email}</td>
-                                    <td className={(i.user_Status === "BANNED" || i.user_Status === "DELETED") ? "text-center text-red-600" : "text-center text-green-600"}>
+                                    <td className="text-left">TSL{i.UId} </td>
+                                    <td className="text-left">{i.coupons} </td>
+                                    <td className="text-left">{i.countryCode}{" "}{ i.phone }</td>
+                                    <td className="text-left">{i.email}</td>
+                                    <td className={(i.user_Status === "BANNED" || i.user_Status === "DELETED") ? "text-left text-red-600" : "text-left text-green-600"}>
                                             {i.user_Status === "BANNED" && "Banned"}
                                             {i.user_Status === "DELETED" && "Deleted"}
                                             {(i.user_Status === "ACTIVE" || i.user_Status === null) && "Active"}
                                     </td>
 
-                                    <td className="text-center">
+                                    <td className="text-left">
                                         <button
                                             className="w-5 h-5"
                                             onClick={() => {
@@ -126,7 +126,7 @@ function  MahadhanamTable(props) {
                                             <img src="/admin/ban.png" className={`${i.ban === true || i.ban === 1 ? "mahadhanam-ban" : ""}`} />
                                         </button>
                                     </td>
-                                    <td className="text-center">
+                                    <td className="text-left">
                                         <label>
                                             <input
                                                 type="checkbox"

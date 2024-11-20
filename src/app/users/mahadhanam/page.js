@@ -74,7 +74,7 @@ function Mahadhanam() {
                 }
             } catch (error) {
                 console.error('Error copying table:', error);
-                toast.error("Error fetching data.");
+                // toast.error("Error fetching data.");
             }
 
             return () => {

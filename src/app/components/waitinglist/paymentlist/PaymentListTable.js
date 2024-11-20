@@ -43,12 +43,12 @@ function PaymentListTable(props) {
             >
                 <tr className="">
 					{/* <th className="text-center">Sl. No</th> */}
-                    <th className="text-center">DOJ</th>
-                    <th className="text-center">Name</th>
-                    <th className="text-center">User Id</th>
-                    <th className="text-center">Email</th>
-                    <th className="text-center">Phone</th>
-                    <th className="text-center"></th>
+                    <th className="text-left">DOJ</th>
+                    <th className="text-left">Name</th>
+                    <th className="text-left">User Id</th>
+                    <th className="text-left">Email</th>
+                    <th className="text-left">Phone</th>
+                    <th className="text-left"></th>
                 </tr>
             </thead>
             <tbody className="my-10">
@@ -76,9 +76,9 @@ function PaymentListTable(props) {
 											)
 										}
                                     </td> */}
-                                    <td className="text-center"><DateFormatter date={ i.DOJ }/></td>
+                                    <td className="text-left"><DateFormatter date={ i.DOJ }/></td>
                                     <td 
-                                        className="text-center text-indigo-600 hover:text-indigo-800 hover:scale-105 cursor-pointer"
+                                        className="text-left text-indigo-600 hover:text-indigo-800 hover:scale-105 cursor-pointer"
                                         onClick={() => {
                                             props.setSelectedUser(i);
                                             props.setIsUserDetails(true);
@@ -86,10 +86,10 @@ function PaymentListTable(props) {
                                     >
                                         { i.first_name } { i.last_name }
                                     </td>
-                                    <td className="text-center">TSL{ i.UId }</td>
-                                    <td className="text-center">{ i.email } </td>
-                                    <td className="text-center">{ i.phone } </td>
-                                    <td className="text-center flex justify-evenly">    
+                                    <td className="text-left">TSL{ i.UId }</td>
+                                    <td className="text-left">{ i.email } </td>
+                                    <td className="text-left">{i.countryCode}{" "} {i.phone}</td>
+                                    <td className="text-left flex justify-evenly">    
                                     <button 
                                         title="View event details"
                                         className='w-28 h-8 bg-[#5799FD] text-white rounded-xl hover:scale-105'
