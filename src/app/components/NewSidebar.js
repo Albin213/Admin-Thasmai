@@ -790,6 +790,234 @@ function NewSidebar() {
       {
         (role === "operator" || role === "Operator") && (
           <div className="w-full h-full pt-14 pb-40 bg-[#00244E] overflow-y-auto">
+         {/* <Link href="/overview">
+            <h1 className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5`}>
+              OVERVIEW
+            </h1>
+          </Link> */}
+
+          {/* <Link href="/overview">
+              <p 
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/overview" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+               
+                Overview
+              </p>
+            </Link> */}
+  
+  
+          {/* MANAGE APPOINTMENTS */}
+          <div className="w-full">
+            <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
+              MANAGE APPOINTMENTS
+            </h1>
+            <Link href="/appointments/appointments">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/appointments/appointments" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Appointments
+              </p>
+            </Link>
+  
+            <Link href="/appointments/calender">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/appointments/calender" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Calender
+              </p>
+            </Link>
+          </div>
+  
+          {/* Feedbacksview */}
+          <div className="w-full">
+            <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
+              FEEDBACK VIEWS{" "}
+            </h1>
+            <Link href="/feedback/appointmentFeedback">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/feedback/appointmentFeedback" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Ashram Stay Feedback
+              </p>
+            </Link>
+  
+            <Link href="/feedback/applicationFeedback">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/feedback/applicationFeedback" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Application Feedback
+              </p>
+            </Link>
+          </div>
+  
+    
+  
+          {/* Notifications / Broadcast */}
+          <div className="w-full">
+            <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
+              NOTIFICATION / BROADCAST
+            </h1>
+            <Link href="/notifications/notifications">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/notifications/notifications" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                One2One (Notification)
+              </p>
+            </Link>
+            <Link href="/notifications/broadcast">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/notifications/broadcast" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Broadcast (Ev1)
+              </p>
+            </Link>
+          </div>
+  
+          {/* Events / Blogs  */}
+          <div className="w-full">
+            <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
+              EVENTS / BLOGS
+            </h1>
+            <Link href="/events/events">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/events/events" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Event Details
+              </p>
+            </Link>
+  
+            <Link href="/events/blogs">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/events/blogs" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Blogs
+              </p>
+            </Link>
+          </div>
+  
+
+          {/* Financial /Expense */}
+          <div className="w-full">
+            <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
+             FINANCIAL / EXPENSE
+            </h1>
+            <Link href="/expenses/add-expense">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/expenses/add-expense" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Add Expense
+              </p>
+            </Link>
+            <Link href="/expenses/reports">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/expenses/reports" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Reports
+              </p>
+            </Link>
+          </div>
+  
+          {/* Help and Support */}
+          <div className="w-full">
+            <Link href="/support">
+              <h1 
+                className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5 `}
+              >
+                HELP AND SUPPORT
+              </h1>
+            </Link>
+            <Link href="/support">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/support" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Help & Support
+              </p>
+            </Link>
+          </div>
+          </div>
+        )
+      }
+
+{
+        (role === "supervisor" || role === "Supervisor") && (
+          <div className="w-full h-full pt-14 pb-40 bg-[#00244E] overflow-y-auto">
          <Link href="/overview">
             <h1 className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5`}>
               OVERVIEW
@@ -949,6 +1177,30 @@ function NewSidebar() {
                   />
                 </span> */}
                 Blogs
+              </p>
+            </Link>
+          </div>
+
+
+           {/* Videos */}
+           <div className="w-full">
+            <Link href="/videos">
+              <h1 className={`text-[#82B0FF] text-[14px] font-bold ps-4 py-5 `}>
+                VIDEOS
+              </h1>
+            </Link>
+            <Link href="/videos">
+              <p
+                className={`text-[#F9F9FF] text-[14px] font-semibold py-2 px-6 flex items-center gap-2 hover:scale-105 hover:text-white  ${ pathname === "/videos" ? "bg-[#3d98ff76] text-white" : "hover:bg-[#3d98ff2a]" }`}
+              >
+                {/* <span>
+                  <img
+                    src="/admin/meditators-icon.svg"
+                    alt="meditator-icon"
+                    className=""
+                  />
+                </span> */}
+                Videos
               </p>
             </Link>
           </div>

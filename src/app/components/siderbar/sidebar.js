@@ -148,6 +148,7 @@ function SideBar() {
   const router = useRouter();
 
   useEffect(() => {
+    console.log("use ffect sdebar sidebar")
     setRole('');
     let role_text = localStorage.getItem('userdata');
     console.log("Role from local storage:", role_text); // Log the role_text to check if it's retrieved correctly
@@ -238,6 +239,36 @@ function SideBar() {
                   </Link>
                   <Link href="/events/events">
                     <li className={`${pathname.startsWith('/events') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Events</li>
+                  </Link>
+                  <Link href="/expenses/add-expense">
+                    <li className={`${pathname.startsWith('/expenses') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Expenses</li>
+                  </Link>
+                  <Link href="/support">
+                    <li className={`${pathname.startsWith('/support') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Help & Support</li>
+                  </Link>
+                </>
+              )}
+
+
+              {(role === "supervisor" || role === "Supervisor") && (
+                <>
+                  <Link href="/overview">
+                    <li className={`${pathname.startsWith('/overview') ? ' bg-[#005DB8] text-white py-3 px-5 ' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Overview</li>
+                  </Link>
+                  <Link href="/appointments/appointments">
+                    <li className={`${pathname.startsWith('/appointments') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Appointments</li>
+                  </Link>
+                  <Link href="/feedback/appointmentFeedback">
+                    <li className={`${pathname.startsWith('/feedback') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Feedback Views</li>
+                  </Link>
+                  <Link href="/notifications/notifications">
+                    <li className={`${pathname.startsWith('/notifications') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Notifications / Broadcast</li>
+                  </Link>
+                  <Link href="/events/events">
+                    <li className={`${pathname.startsWith('/events') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Events</li>
+                  </Link>
+                  <Link href="/videos">
+                    <li className={`${pathname.startsWith('/videos') ? ' bg-[#005DB8] text-white py-2 px-5' : 'py-2 px-5 text-black hover:bg-[#dbeafe]'}`}>Videos</li>
                   </Link>
                   <Link href="/expenses/add-expense">
                     <li className={`${pathname.startsWith('/expenses') ? ' bg-[#005DB8] text-white py-3 px-5' : 'py-3 px-5 text-black hover:bg-[#dbeafe]'}`}>Expenses</li>

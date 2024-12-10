@@ -105,6 +105,8 @@ function AddEmployee(props) {
                     <option  value="" selected disabled>Role</option>
                     {/* <option value="supervisor">Supervisor</option> */}
                     <option value="operator">Operator</option>
+                    <option value="supervisor">Supervisor</option>
+
                 </select>
                 {/* <select className='w-full h-10 ps-2 bg-[#E0E2EC] text-black border-2 border-[#74777F] rounded-[8px]' >
                     <option value="" selected disabled>*Supervisor(only if the role is operator)</option>

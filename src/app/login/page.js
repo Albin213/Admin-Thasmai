@@ -38,7 +38,8 @@ function Login() {
   			if (userData.role === 'operator'){
 			
   			 
-				return location.href ='/admin/overview'
+				// return location.href ='/admin/overview'
+				return location.href ='/admin/appointments/appointments'
 
 			
   			}
@@ -49,6 +50,9 @@ function Login() {
 
 			
   			}
+			else if (userData.role === 'supervisor'){
+				return location.href ='/admin/overview'
+			}
   			// else{
   			//   loginToggle(true)
   			// }

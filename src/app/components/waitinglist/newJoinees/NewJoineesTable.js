@@ -44,7 +44,7 @@ function NewJoineesTable(props) {
                     <th className="text-left">User Id</th>
                     <th className="text-left">Email</th>
                     <th className="text-left">Phone</th>
-                    {/* <th className="text-center"></th> */}
+                    <th className="text-center"></th>
                 </tr>
             </thead>
             <tbody className="my-10">
@@ -74,18 +74,18 @@ function NewJoineesTable(props) {
                                     </td> */}
                                     <td className="text-left"><DateFormatter date={ i.DOJ }/></td>
                                     <td 
-                                        className="text-left text-black"
-                                        // onClick={() => {
-                                        //     props.setSelectedUser(i);
-                                        //     props.setIsUserDetails(true);
-                                        // }}
+                                        className="text-left text-indigo-600 hover:text-indigo-800 hover:scale-105 cursor-pointer"
+                                        onClick={() => {
+                                            props.setSelectedUser(i);
+                                            props.setIsUserDetails(true);
+                                        }}
                                     >
                                         { i.first_name } { i.last_name }
                                     </td>
                                     <td className="text-left">TSL{ i.UId }</td>
                                     <td className="text-left">{ i.email } </td>
                                     <td className="text-left">{i.countryCode}{" "}{ i.phone } </td>
-                                    {/* <td className="text-center flex justify-evenly">    
+                                    <td className="text-center flex justify-evenly">    
                                         <button 
                                             title="View event details"
                                             className='w-28 h-8 bg-[#5799FD] text-white rounded-xl hover:scale-105'
@@ -96,7 +96,7 @@ function NewJoineesTable(props) {
                                         >
                                             View Details
                                         </button>
-                                    </td> */}
+                                    </td>
                                 </tr>
                     		);
                     	})

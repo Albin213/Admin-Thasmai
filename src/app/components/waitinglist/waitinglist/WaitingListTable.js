@@ -76,6 +76,7 @@ function WaitingListTable(props) {
 											)
 										}
                                     </td> */}
+                                    
                                     <td className="text-left"><DateFormatter date={ i.DOJ }/></td>
                                     <td 
                                         className="text-left text-indigo-600 hover:text-indigo-800 hover:scale-105 cursor-pointer"

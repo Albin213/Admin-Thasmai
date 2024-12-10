@@ -497,7 +497,7 @@ function Blogs() {
 
         		<div className='w-full h-[80%] mt-2'>
 			  		<div className="w-full h-[85%] m-0 p-0 overflow-scroll">
-					  < BlogDetailsTable
+					  <BlogDetailsTable
                   		  	setBlogId={setBlogId} 
                   		  	setIsViewBlog={setIsViewBlog} 
                   		  	setEditBlog={setEditBlog}

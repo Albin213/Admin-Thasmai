@@ -34,9 +34,9 @@ function UserProfile(props) {
                     </div>
                     <div className='w-full md:h-[50%] p-3 pt-5 text-black'>
                       <p className='mb-4 font-semibold'>{`${profile.first_name}  ${profile.last_name}`}</p>
-                      <p className='mb-4'>{ profile.email} </p>
-                      <p className='mb-4'> {profile.countryCode}{" "} {profile.phone} </p>
-                      <p className='mb-4'>Card No: TSL{ profile.UId} </p>
+                      <p className='mb-4 text-sm'>{ profile.email} </p>
+                      <p className='mb-4 text-sm'> {profile.countryCode}{" "} {profile.phone} </p>
+                      <p className='mb-4 text-sm'>Card No: TSL{ profile.UId} </p>
                     </div>
                 </div>
 
@@ -46,36 +46,41 @@ function UserProfile(props) {
                       <tbody className='text-sm md:text-base'>
                         <tr className='h-[40px]'>
                           <td className='w-[35%] text-left'>Name</td>
-                          <td className='w-[65%] text-left'>: {`${profile.first_name}  ${profile.last_name}`}</td>
+                          <td className='w-[65%] text-left'>:{"  "} {`${profile.first_name}  ${profile.last_name}`}</td>
                         </tr>
                         <tr className='h-[40px]'>
                           <td className='w-[35%] text-left'>Phone No.</td>
-                          <td className='w-[65%] text-left'>:{profile.countryCode}{" "} {profile.phone}</td>
+                          <td className='w-[65%] text-left'>:{"  "} {profile.countryCode}{" "} {profile.phone}</td>
                         </tr>
                         <tr className='h-[40px]'>
                           <td className='w-[35%] text-left'>Email</td>
-                          <td className='w-[65%] text-left'>: {profile.email}</td>
+                          <td className='w-[65%] text-left'>:{"  "} {profile.email}</td>
                         </tr>
                         <tr className='h-[40px]'>
                           <td className='w-[35%] text-left'>DOB</td>
-                          <td className='w-[65%] text-left'>: <DateFormatter date={profile.DOB}/> </td>
-                        </tr>
-                        <tr className='h-[40px]'>
-                          <td className='w-[35%] text-left'>Gender</td>
-                          <td className='w-[65%] text-left'>: {profile.gender}</td>
-                        </tr>
-                        <tr className='h-[40px]'>
-                          <td className='w-[35%] text-left'>Languages</td>
-                          <td className='w-[65%] text-left'>: {profile.languages}</td>
-                        </tr>
-                        <tr className='h-[40px]'>
-                          <td className='w-[35%] text-left'>Reference</td>
-                          <td className='w-[65%] text-left'>: {profile.reference}</td>
+                          <td className='w-[65%] text-left'>:{"  "} <DateFormatter date={profile.DOB}/> </td>
                         </tr>
                         <tr className='h-[40px]'>
                           <td className='w-[35%] text-left'>Country</td>
-                          <td className='w-[65%] text-left'>: {profile.country}</td>
+                          <td className='w-[65%] text-left'>:{"  "} {profile.country}</td>
                         </tr>
+                        <tr className='h-[40px]'>
+                          <td className='w-[35%] text-left'>Gender</td>
+                          <td className='w-[65%] text-left'>:{"  "} {profile.gender}</td>
+                        </tr>
+                        <tr className='h-[40px]'>
+                          <td className='w-[35%] text-left'>Languages</td>
+                          <td className='w-[65%] text-left'>:{"  "} {profile.languages}</td>
+                        </tr>
+                        <tr className='h-[40px]'>
+                          <td className='w-[35%] text-left'>Reference</td>
+                          <td className='w-[65%] text-left'>:{"  "} {profile.reference}</td>
+                        </tr>
+                        <tr className='min-h-[40px]'>
+                          <td className='text-left flex '>Special Remarks</td>
+                          <td className='w-[65%] text-left'>:{"  "} {profile.remark}</td>
+                        </tr>
+                        
                         {
                           profile.classAttended === false &&
                           <>
@@ -111,7 +116,7 @@ function UserProfile(props) {
                       </tbody>
                   </table>
 
-                  <div className='w-full h-[15%] p-5 flex border-t-2 border-white absolute bottom-0 left-0 right-0'>
+                  <div className='w-full h-[15%] p-5 flex  bg-white border-t-2 border-white sticky bottom-0 left-0 right-0'>
                       {
                         (profile.classAttended === true) &&
                         <>
