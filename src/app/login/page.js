@@ -39,7 +39,7 @@ function Login() {
 			
   			 
 				// return location.href ='/admin/overview'
-				return location.href ='/admin/appointments/appointments'
+				return location.href ='/admin/expenses/add-expense'
 
 			
   			}

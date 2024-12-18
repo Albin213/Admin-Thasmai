@@ -39,7 +39,8 @@ function AddEmployee(props) {
         try {
           const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/superadmin/operatorCreation`, employeeData)
           console.log(response);
-          toast.success(response.data.message);
+          // toast.success(response.data.message);
+          toast.success("Employee Created Successfully");
           setEmployeeData({
             name:"",
             role : "",

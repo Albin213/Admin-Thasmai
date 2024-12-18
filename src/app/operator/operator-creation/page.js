@@ -26,7 +26,7 @@ function OperatorCreation() {
 	// console.log(operatorData);
 
 	const setNavbarText = useNavbarTextStore((state) => state.setNavbarText);
-	setNavbarText("User Management");
+	setNavbarText("Employee Management");
 
 	function handleSearchChange(event) {
         const { name, value } = event.target
@@ -91,7 +91,7 @@ function OperatorCreation() {
 				<div className='w-full h-[8%] flex items-center'>
     	      		<div className='w-[70%] h-full flex'>
 					    <select 
-    	        	  	 	className='w-[250px] h-full px-2 bg-[#EEEAEA] text-black rounded-xl'
+    	        	  	 	className='w-[250px] h-10 px-2 bg-[#EEEAEA] text-black rounded-xl'
 							name='searchField'
 							value={searchData.searchField}
 							onChange={handleSearchChange}
@@ -103,7 +103,7 @@ function OperatorCreation() {
 			  		    </select>
     	      		  	<input 
     	      		  	  	type='text'
-    	      		  	  	className='w-[250px] h-full ms-6 px-2 bg-[#EEEAEA] text-black rounded-xl'
+    	      		  	  	className='w-[250px] h-10 ms-6 px-2 bg-[#EEEAEA] text-black rounded-xl'
 					  		placeholder='Values'
 							name='searchValue'
 							value={searchData.searchValue}
@@ -120,7 +120,7 @@ function OperatorCreation() {
 
 						<div className='w-[30%] h-full flex flex-row-reverse'>
 						   <button 
-					   	    	className='w-[180px] h-full text-white bg-[#005DB8] rounded-xl hover:bg-[#005cb8c0] hover:scale-105'
+					   	    	className='w-[180px] h-10 text-white bg-[#005DB8] rounded-xl hover:bg-[#005cb8c0] hover:scale-105'
 						    		onClick={() => {
 						    	setAddPopup(true);
 						    	}}

@@ -596,7 +596,7 @@ function NewSidebar() {
           <div className="w-full">
             <Link href="/operator/operator-creation">
               <h1 className="text-[#82B0FF] text-[14px] font-bold ps-4 py-5 hover:bg-[#3d98ff2a]">
-                OPERATOR MANAGEMENT
+                EMPLOYEE MANAGEMENT
               </h1>
             </Link>
             <Link href="/operator/operator-creation">
@@ -610,7 +610,7 @@ function NewSidebar() {
                     className=""
                   />
                 </span> */}
-                Operator Management
+                Employee Management
               </p>
             </Link>
           </div>
