@@ -63,7 +63,7 @@ function ResetPasswordPopUp({ setIsResetPasswordPopUpOpen }) {
     <div className="w-screen h-screen px-2 md:px-0 bg-[#000000af] absolute left-0 top-0 flex justify-center items-center z-[100]">
         <div className='w-full md:w-[550px] bg-white drop-shadow-md rounded'>
             <div className='h-20 p-4 flex items-center bg-[#005db8] rounded-t relative'>
-                <h1 className='text-xl text-white'>Reset Password</h1> 
+                <h1 className='text-xl text-white'>Change Password</h1> 
                 <span 
                     className='absolute top-2 right-2 rotate-45 text-white text-4xl cursor-pointer'
                     onClick={() => setIsResetPasswordPopUpOpen(false)}
@@ -99,7 +99,7 @@ function ResetPasswordPopUp({ setIsResetPasswordPopUpOpen }) {
                     className='h-12 bg-[#005db8] text-white'
                     onClick={handleSubmit}
                 >
-                    Reset Password
+                    Change Password
                 </button>
             </div>
         
