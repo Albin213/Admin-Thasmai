@@ -27,6 +27,7 @@ function LogoutPopUp(props) {
                     localStorage.removeItem('userdata')
                     state.setIsloggedin(false);
                     props.setIsLogoutPopUp(false);
+                    window.location.reload();
                     router.push('/login');
                 }}
             >Yes</button>

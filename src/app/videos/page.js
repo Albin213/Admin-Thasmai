@@ -114,10 +114,10 @@ function MeditationVideo() {
               
                 <p className='text-black font-medium px-2 pt-1'>Create Playlist Heading</p>
                   
-                 <div className='w-full flex'>
-                   <div className='w-[80%] h-full pt-4 flex'>
+                 <div className='w-full flex xl:flex-row flex-col'>
+                   <div className='w-full lg:w-[80%] h-full pt-4 flex '>
                       <input
-                       className='w-[300px] h-10 ms-8 p-2 rounded border-[1px] text-black bg-white border-black'
+                       className='sm:w-[300px] h-10 ms-8 p-2 rounded border-[1px] text-black bg-white border-black'
                        name='playlistHeading'
                        value={playlistData.playlistHeading}
                        placeholder='Playlist Heading'
